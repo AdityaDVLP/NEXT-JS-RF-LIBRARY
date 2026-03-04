@@ -54,7 +54,7 @@ export default function RegisterPage() {
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         <div className="bg-blue-600 px-8 py-6 text-white text-center">
           <h1 className="text-3xl font-bold">Registrasi Pengunjung</h1>
-          <p className="mt-2 text-blue-100">Silakan lengkapi data diri Anda umtuk mendaftar.</p>
+          <p className="mt-2 text-blue-100">Silakan lengkapi data diri Anda untuk mendaftar.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="p-8 space-y-6">
@@ -188,7 +188,7 @@ export default function RegisterPage() {
                   : "bg-gray-200 text-gray-400 cursor-not-allowed"
                 }`}
             >
-              {isFormValid ? "Daftar Sekarang" : "Lengkapi Form"}
+              {isFormValid ? "Daftar Sekarang" : "DAFTAR SEBAGAI ANGGOTA"}
             </button>
           </div>
 

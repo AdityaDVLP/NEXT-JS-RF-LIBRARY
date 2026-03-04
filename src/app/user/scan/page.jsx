@@ -140,7 +140,7 @@ export default function ScanPage() {
               <h3 className="text-2xl font-bold text-gray-900">Kartu Terdeteksi!</h3>
 
               <div className="inline-block bg-gray-50 rounded-lg px-4 py-2 mt-2 border border-gray-100">
-                <p className="text-sm text-gray-500 font-mono">UID: <span className="text-gray-900 font-bold">{scanData.uid}</span></p>
+                <p className="text-sm text-gray-500 font-mono"> <span className="text-gray-900 font-bold"></span></p>
                 <p className="text-xs text-gray-400 mt-1">{scanData.timestamp}</p>
               </div>
 

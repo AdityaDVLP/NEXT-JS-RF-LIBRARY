@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="hidden sm:flex text-sm font-medium text-gray-500">
-              Sistem Otomatisasi Terpadu
+              PROTOTYPE SMART LIBRARY ITK 
             </div>
           </div>
         </header>

@@ -14,7 +14,7 @@ export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("koleksi");
   const [stats, setStats] = useState({
     totalKoleksiBuku: null,
-    jumlahBukuKeluar: null,
+    jumlahAnggotaTerdaftar: null,
     indikatorRssi: null,
     pengunjung: { hariIni: null, mingguIni: null, bulanIni: null },
   });
@@ -29,10 +29,14 @@ export default function AdminDashboard() {
         if (res.ok) {
           const data = await res.json();
           setStats({
-            totalKoleksiBuku: data.totalKoleksiBuku,
-            jumlahBukuKeluar: data.jumlahBukuKeluar,
-            indikatorRssi: data.indikatorRssi,
-            pengunjung: data.pengunjung,
+            totalKoleksiBuku: data.totalKoleksiBuku ?? null,
+            jumlahAnggotaTerdaftar: data.jumlahAnggotaTerdaftar ?? null,
+            indikatorRssi: data.indikatorRssi ?? null,
+            pengunjung: data.pengunjung ?? {
+              hariIni: null,
+              mingguIni: null,
+              bulanIni: null,
+            },
           });
         }
       } catch (err) {
